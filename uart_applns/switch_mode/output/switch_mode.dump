@@ -1,0 +1,24 @@
+
+./output/switch_mode.shakti:     file format elf64-littleriscv
+
+
+Disassembly of section .riscv.attributes:
+
+0000000000000000 <_heap-0x80000000>:
+   0:	2841                	addiw	a6,a6,16
+   2:	0000                	unimp
+   4:	7200                	ld	s0,32(a2)
+   6:	7369                	lui	t1,0xffffa
+   8:	01007663          	bgeu	zero,a6,14 <_HEAP_SIZE-0x3fffdec>
+   c:	001e                	c.slli	zero,0x7
+   e:	0000                	unimp
+  10:	7205                	lui	tp,0xfffe1
+  12:	3676                	fld	fa2,376(sp)
+  14:	6934                	ld	a3,80(a0)
+  16:	7032                	0x7032
+  18:	5f30                	lw	a2,120(a4)
+  1a:	326d                	addiw	tp,tp,-5
+  1c:	3070                	fld	fa2,224(s0)
+  1e:	615f 7032 5f30      	0x5f307032615f
+  24:	30703263          	0x30703263
+	...
