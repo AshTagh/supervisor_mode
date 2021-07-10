@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sun Oct 18 15:06:57 2020
+# Process ID: 19583
+# Current directory: /home/shaktilab/040920/shakti-sdk-dev
+# Command line: vivado
+# Log file: /home/shaktilab/040920/shakti-sdk-dev/vivado.log
+# Journal file: /home/shaktilab/040920/shakti-sdk-dev/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {/home/shaktilab/SOC_RTL/N3/fpga_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+connect_hw_server
+open_hw_target
